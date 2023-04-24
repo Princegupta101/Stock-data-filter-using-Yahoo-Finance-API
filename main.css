@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+   
+body{
+    height: 100vh;
+    background-color:hsl(197, 37%, 96%);
+}
+nav{
+    display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 20px;
+padding-bottom: 10px;
+background-color: #0f0f0f;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.list1{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    color: #f2f2f2;
+    gap: 60px;
+    font-size: 25px;
+    font-weight: 600;
+  
+}
+.big-button{
+    background-color: #ffe98a;
+        
+    padding: 8px 15px;
+    font-size: 35;
+cursor: pointer;
+color: rgb(26, 25, 25);
+border: 1px soild white;
+border-radius: 10px;
+font-weight: 700;
+width: fit-content; 
+}
+
+
+button:hover{
+    background-color: white;
+    color: rgb(18, 155, 155);
+    border: 1px solid black;
+    font-weight: 900;
+
+}
+.small-button{
+        background-color: #ffe98a;
+    padding: 4px 10px;
+cursor: pointer;
+color: rgb(26, 25, 25);
+border: 1px soild white;
+border-radius: 5px;
+font-weight: 700;
+border-radius: 10px;
+width: fit-content;
+
+}
+main{
+    display: flex;
+   justify-content: center;
+   gap: 10px;
+   font-size: 18px;
+   
+   font-weight: 200;
+   margin-top: 50px;
+   margin-left: 15px;
+   height: 120vh;
+   
+  
+}
+.filters {
+    border: 1px solid gray;
+    font-size: 20px;
+    
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.data{
+    border: 1px solid gray;
+padding: 10px;
+overflow-y: scroll;
+
+}
+
+footer{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(41, 39, 39);
+    margin-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    bottom: 1px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+ table {
+      border-collapse: collapse;
+      width: 100%;
+    
+    }
+    tr{
+        display: flex;
+        justify-content: center;
+        color: #ddd;
+        gap: 30px;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    
+        
+        
+    }
+.thead{
+background-color: #111111;
+}
+  td {
+      text-align: left;
+    /* justify-content: center; */
+   
+    color: #0f0f0f;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {    
+      text-align: left;
+      width: fit-content;
+      background-color: #1f1e1e;
+      color: #e8d8d8;
+      /* justify-content: center; */
+    
+    }
+    .tt{
+      color: #e6d7d7;
+      background-color: #050505;
+    }
+   table{
+    margin: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 18vw;
+   }
+  #stock-prices{
+    width: 45vw;
+  }  
+  .box {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="text"], input[type="number"] {
+    padding: 5px;
+    margin: 5px;
+    /* width: 200px; */
+  }
+  button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #701eb7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .container1 {
+    display: flex;
+   
+  width: fit-content;
+    justify-content: center;
+    
+  }
+
+  .article {
+    width: 100%;
+padding: 0px 10px;
+color:#1e1e1e;
+background-color: #fff;
+    border: 1px solid black;
+    
+  }
+
+  .article h2 {
+    font-size: 24px;
+    
+    margin: 10px;
+  }
+
+  .article p {
+    font-size: 14px;
+  }
+  #problem{
+    display: flex;
+    background-color: #141313;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ddd;
+    justify-content: center;
+    
+  }
+  
+  #chart-container {
+    height: 350px;
+    width: 350px;
+    
+    margin: 30px;
+    justify-content: center;
+    background-color: #141313;
+  }
+  #graph2
+  {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+.hover:hover{
+  font-size: 30px;
+  color :#ffe98a ;
+}

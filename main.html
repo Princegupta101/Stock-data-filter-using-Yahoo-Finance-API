@@ -1,0 +1,184 @@
+<!-- jai shri ram -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css flie -->
+  <link rel="stylesheet" href="/project/main.css" class="css">
+  <!-- google fonts   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="./server.js" defer></script>
+  <title>www.stocx.com </title>
+</head>
+
+<body>
+  <!-- headerPart -->
+  
+
+  <div class="container">
+
+    <nav>
+      <div class="logo">
+        <img src="/project/logo.jpg" alt="logo" width="65px" height="65px">
+      </div>
+      <div class="list">
+        <ul class="list1">
+
+          <li class="hover" >About</li>
+          <li  class="hover">Helpdesk</li>
+          <li class="hover">Feedback</li>
+
+        </ul>
+
+
+      </div>
+      <div>
+        <!-- button right header -->
+        <button class="big-button"> <b> <a href="/project/login.html"> Login/Register</a></b></button>
+      </div>
+    </nav>
+  </div>
+
+  <!--  main section -->
+  <main>
+
+    <div class="filters">
+      <div>
+        <input type="search" name="search" id="search_query">
+        <button class="small-button" id="filter_search">Search</button>
+      </div>
+      <input class="btn" type="radio" name="btn" id="Acadmics/Education">
+      <label for="Acadmics/Educational">Academics/Educational</label> <br>
+      <input class="btn" type="radio" name="btn" id="Agriculture">
+      <label for="Agriculture">Agriculture</label><br>
+      <input class="btn" type="radio" name="btn" id="Automoblie">
+      <label for="Automoblie">Automobile</label><br>
+      <input class="btn" type="radio" name="btn" id="Banking">
+      <label for="Banking">Banking</label><br>
+      <input class="btn" type="radio" name="btn" id="Healthcare">
+      <label for="Healthcare">Healthcare</label><br>
+      <input class="btn" type="radio" name="btn" id="Industries">
+      <label for="Industries">Industries</label><br>
+      <input class="btn" type="radio" name="btn" id="Itindustries">
+      <label for="Itindustries">IT &nbsp; Industries</label><br>
+      <input class="btn" type="radio" name="btn" id="Media/Entertainment">
+      <label for="Media/Entertainment">Media/Entertainment</label><br>
+      <input class="btn" type="radio" name="btn" id="RealEstate">
+      <label for="Realstate">RealEstate</label><br>
+      <br><br>
+      <div class="box">
+        <h3>Calculate Profit/Loss</h3>
+        <br>
+        <label for="fixedAmount">Fixed Amount:</label>
+        <input type="number" id="fixedAmount" name="fixedAmount"><br>
+        <label for="purchasePrice">Purchase Price:</label>
+        <input type="number" id="purchasePrice" name="purchasePrice"><br>
+        <label for="currentPrice">Current Price:</label>
+        <input type="number" id="currentPrice" name="currentPrice"><br>
+        <button onclick="calculateProfitLoss()">Calculate</button>
+      </div>
+      <div class="box" id="resultBox" style="display:none">
+        <h2>Result</h2>
+        <p id="result"></p>
+        <button onclick="resetForm()">Enter New Amount</button>
+      </div>
+
+
+    </div>
+    <div class="data">
+      <div class="right-section">
+
+        <table id="stock-prices" class="stockhead">
+          <thead class="thead">
+            <tr>
+              <th class="tt">Company Name &nbsp; &nbsp; &nbsp; &nbsp;</th>
+              <th class="tt">Symbol</th>
+              <th class="tt">Price</th>
+              <th class="tt">  Currency</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+    <div class="data">
+      <div class="right-section">
+
+        <table id="stock" class="stockhead table">
+          <thead>
+            <tr id="graph2">
+              
+               <th> <div id="chart-container" class="chart"></div></th>
+               <td id="problem">NEWS</td>
+              
+            </tr>
+          </thead>
+          <tbody class="graph">
+            
+            <td><div class="container1" ></div></td>
+            
+          </tbody>
+          
+        </table>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="heading">
+      <ul>
+        <li>
+          
+          <h3>Email</h3>
+        </li>
+        <li>
+          <h3>Linkdin</h3>
+        </li>
+        <li>
+          <h3>Github</h3>
+        </li>
+      </ul>
+    </div>
+    <div class="prince">
+      <ul>
+        <li><b>pgupta28349@gmail.com</b></li>
+        <li>https://www.linkedin.com/in/prince-gupta-0201b824b</li>
+        <li>https://www.linkedin.com/in /prince-gupta-0201b824b</li>
+      </ul>
+    </div>
+    <div class="unnati">
+
+      <ul>
+        <li><b> unnatigupta003@gmail.com</b></li>
+        <li>https://www.linkedin.com/in/prince-gupta-0201b824b</li>
+        <li>https://www.linkedin.com/in/prince-gupta-0201b824b</li>
+      </ul>
+    </div>
+    <div class="ashima">
+      <ul>
+        <li><b>ashimasingh0610@gmail.com</b></li>
+        <li>https://www.linkedin.com/in/prince-gupta-0201b824b</li>
+        <li>https://www.linkedin.com/in/prince-gupta-0201b824b</li>
+      </ul>
+    </div>
+
+  </footer>
+</body>
+<script>
+  document.getElementById("filter_search").addEventListener("click", () => {
+    console.log("hello")
+  })
+</script>
+
+</html>
